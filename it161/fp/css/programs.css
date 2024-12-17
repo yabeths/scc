@@ -1,0 +1,197 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Container */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-image: url('/images/hf-background.jpg');
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+ /* Logo image styling */
+.logo {
+    width: 150px; 
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Hover effect with the theme color */
+}
+
+/* Programs Section */
+#programs {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#programs h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.program-option {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.program-option h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.program-option p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #ff6600; /* Bright Orange */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-image: url('/images/hf-background.jpg');
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #programs h2 {
+        font-size: 28px;
+    }
+
+    .program-option {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .program-option h3 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+    
+     /* Logo image styling */
+    .logo {
+        width: 100px; /* Adjust the width as needed */
+        height: auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #programs h2 {
+        font-size: 24px;
+    }
+
+    .program-option {
+        padding: 15px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}

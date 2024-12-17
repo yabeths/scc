@@ -1,0 +1,223 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header Styles */
+header {
+    background-image: url('/images/hf-background.jpg');
+    padding: 0px;
+    text-align: center;
+}
+
+ /* Logo image styling */
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Tracking Section */
+#tracking {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#tracking h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff6600;
+    ;
+}
+
+#tracking p {
+    font-size: 18px;
+    color: #070707;
+    margin-bottom: 40px;
+}
+
+/* Tracking Dashboard Styles */
+.tracking-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.metric {    
+    position: relative;
+    top: 0;
+    left: 185;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.metric h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.metric p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background-image: url('/images/hf-background.jpg');
+    color: #fff;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 250px;
+    padding: 15px;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ff6600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff6600;
+}
+
+/* Social Media Icons */
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #tracking h2 {
+        font-size: 28px;
+    }
+
+    #tracking p {
+        font-size: 16px;
+    }
+
+    .tracking-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .metric h3 {
+        font-size: 22px;
+    }
+
+    .metric p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #tracking h2 {
+        font-size: 24px;
+    }
+
+    .tracking-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .metric h3 {
+        font-size: 20px;
+    }
+
+    .metric p {
+        font-size: 14px;
+    }
+}

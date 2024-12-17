@@ -1,0 +1,239 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-image: url('/images/hf-background.jpg');
+    padding: 20px;
+    text-align: center;
+}
+
+
+ /* Logo image styling */
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff8533;
+}
+
+/* Help Center and Live Chat */
+#contact h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #333;
+}
+
+#contact p a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact p a:hover {
+    color: #ff8533;
+}
+
+/* Footer Styles */
+footer {
+    background-image: url('/images/hf-background.jpg');
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+footer p {
+    color: #fff;
+}
+footer ul li a:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+
+    #contact h3 {
+        font-size: 24px;
+    }
+
+    .live-chat-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+
+    #contact h3 {
+        font-size: 22px;
+    }
+
+    .live-chat-icon img {
+        width: 35px;
+        height: 35px;
+    }
+}
