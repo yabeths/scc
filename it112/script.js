@@ -1,0 +1,27 @@
+// Function to assign a letter grade
+function assignedScore(score) {
+    if (score >= 90) {
+        return "You got an A!";
+    } else if (score >= 80) {
+        return "You got a B!";
+    } else if (score >= 70) {
+        return "You got a C!";
+    } else if (score >= 60) {
+        return "You got a D!";
+    } else {
+        return "You got an F!";
+    }
+}
+
+// Prompt user for input
+let userInput = prompt("Enter your score (0 to 100):");
+
+// Convert input to number
+let numericScore = parseInt(userInput);
+
+// Check for valid number and range
+if (!isNaN(numericScore) && numericScore >= 0 && numericScore <= 100) {
+    alert(assignedScore(numericScore));
+} else {
+    alert("Please enter a valid number between 0 and 100.");
+}
