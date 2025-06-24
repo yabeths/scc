@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Order Form</title>
+</head>
+<body>
+    <h1>Customer Food Order</h1>
+
+    <form action="/submit_order" method="POST">
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" minlength="2" maxlength="20" required>
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" minlength="2" maxlength="20" required>
+        <br><br>
+
+        <!-- Food Preference -->
+        <label for="food">Select your food preference:</label>
+        <select id="food" name="food" required>
+            <option value="">--Please choose an option--</option>
+            <option value="chicken">Chicken</option>
+            <option value="beef">Beef</option>
+            <option value="fish">Fish</option>
+        </select>
+        <br><br>
+
+        <!-- Allergy Info -->
+        <label for="allergies">List any allergies (if any):</label><br>
+        <textarea id="allergies" name="allergies" rows="4" cols="40" placeholder="Type allergies here..."></textarea>
+        <br><br>
+
+        <!-- Submit -->
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
