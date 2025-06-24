@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Class Selectors */
+.crimson {
+  color: crimson;
+}
+
+.green {
+  color: seagreen; /* You can also use 'darkgreen' or a hex code like '#228B22' */
+}
+
+.maize {
+  color: #FFCB05; /* Official Maize Hex Color from University of Michigan */
+}
+
+.red {
+  color: red;
+}
+
+.burnt-orange {
+  color: #BF5700; /* Official Burnt Orange for Texas Longhorns */
+}
+
+/* ID Selectors */
+#yes {
+  background-color: green;
+  color: white;
+}
+
+#no {
+  background-color: red;
+  color: white;
+}
